@@ -1,0 +1,25 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+ 
+}
+
+
+/* Autofill styles */
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-box-shadow: 0 0 0 30px rgba(232, 240, 254, 1) inset;
+    box-shadow: 0 0 0 30px rgba(232, 240, 254, 1) inset;
+    -webkit-text-fill-color: #000 !important; /* Change to your preferred color */
+    transition: background-color 5000s ease-in-out 0s;
+}
+
+/* Specific internal autofill style */
+input:-internal-autofill-selected {
+    appearance: menulist-button;
+    background-color: rgba(70, 90, 126, 0.4) !important;
+    color: fieldtex
+
+}
