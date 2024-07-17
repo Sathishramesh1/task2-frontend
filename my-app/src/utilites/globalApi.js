@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const baseUrl='http://localhost:3000'
+const baseUrl='https://task2-backend-joyd.onrender.com'
 
 export const handleAddToCartApi = async (product,qty=1) => {
     try {
