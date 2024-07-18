@@ -2,4 +2,9 @@
 
     background-color: skyblue;
     height: 100dvh;
+
+    p{
+        margin-top: 0;
+        padding-top: 2rem;
+    }
 }

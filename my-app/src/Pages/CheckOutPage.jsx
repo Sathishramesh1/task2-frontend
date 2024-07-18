@@ -28,7 +28,7 @@ const fixed=Number(totalAmount*100)
 
     try {
         
-        const res = await fetch("http://localhost:3000/api/order/v1/create-checkout-session", {
+        const res = await fetch("https://task2-backend-joyd.onrender.com/api/order/v1/create-checkout-session", {
             method: "POST",
             headers: {
         'Content-Type': 'application/json'
@@ -87,7 +87,7 @@ export const Return = () => {
 
 
 
-    fetch(`http://localhost:3000/api/order/v1/session-status?session_id=${sessionId}`,{
+    fetch(`https://task2-backend-joyd.onrender.com/api/order/v1/session-status?session_id=${sessionId}`,{
       method: 'GET',
       credentials: 'include' 
     })

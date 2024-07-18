@@ -25,7 +25,7 @@ const defaultTheme = createTheme();
 const validationSchema = yup.object({
   name: yup
     .string('Enter your name')
-  //   .name('Enter a valid name')
+    // .name('Enter a valid name')
     .required('Name is required'),
     email: yup
     .string('Enter your email')
@@ -87,6 +87,11 @@ const formik = useFormik({
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+            padding:"2rem",
+           backgroundColor:"#e4f1f5!important",
+          borderRadius:"1rem",
+          
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -113,7 +118,7 @@ const formik = useFormik({
                   onBlur={formik.handleBlur}
                  error={formik.touched.name && Boolean(formik.errors.name)}
                  helperText={formik.touched.name && formik.errors.name}
-                 sx={{ bgcolor: 'background.paper' }} 
+                //  sx={{ bgcolor: 'background.paper' }} 
                 />
               </Grid>
              

@@ -4,7 +4,7 @@ const baseUrl='https://task2-backend-joyd.onrender.com'
 
 export const handleAddToCartApi = async (product,qty=1) => {
     try {
-       console.log(product,"from apifn")
+   
         const response = await axios.post(`${baseUrl}/api/products/v1/addtocart`, {
             ...product,
             quantity: qty
@@ -14,7 +14,7 @@ export const handleAddToCartApi = async (product,qty=1) => {
         }
     );
         
-        // console.log("Updated Cart:", response.data);
+       
         return response;
        
     } catch (error) {

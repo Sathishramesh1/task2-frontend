@@ -26,7 +26,7 @@ data();
 
   const handleRemove = async (itemId) => {
     const res = await RemoveFromCartApi(itemId);
-    console.log(res);
+    // console.log(res);
   };
 
   return (

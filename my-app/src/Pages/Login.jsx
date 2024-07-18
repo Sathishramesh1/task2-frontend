@@ -99,10 +99,16 @@ export default function Login() {
         <CssBaseline />
         <Box
           sx={{
-            marginTop: 8,
+            marginTop: 6,
             display: 'flex',
             flexDirection: 'column',
             alignItems: 'center',
+           padding:"2rem",
+           backgroundColor:"#e4f1f5",
+          borderRadius:"1rem",
+          
+          boxShadow: "rgba(0, 0, 0, 0.35) 0px 5px 15px",
+
           }}
         >
           <Avatar sx={{ m: 1, bgcolor: 'secondary.main' }}>
@@ -147,7 +153,22 @@ export default function Login() {
               type="submit"
               fullWidth
               variant="contained"
-              sx={{ mt: 3, mb: 2 }}
+              sx={{ mt: 3, mb: 2 ,
+              borderRadius:"2rem",
+              
+                border:"none",
+              outline:"none",
+              '&:focus':{
+                border:"none",
+                outline: 'none'
+              },
+              '&:active':{
+                border:"none",
+                outline: 'none'
+              }
+              
+              
+              }}
             >
               Sign In
             </Button>
